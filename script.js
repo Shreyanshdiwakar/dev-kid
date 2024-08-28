@@ -8,6 +8,17 @@ function raf(time) {
   lenis.raf(time)
   requestAnimationFrame(raf)
 }
+VanillaTilt.init(document.querySelectorAll(".boxsh"), {
+    max: 25,
+    speed: 400
+  });
+  
+  VanillaTilt.init(document.querySelectorAll(".boxsh"), {
+    max: 25,
+    speed: 400
+  });
+  
+  VanillaTilt.init(document.querySelectorAll(".your-element"));
 
 requestAnimationFrame(raf)
 
@@ -90,40 +101,40 @@ let tl4 = gsap.timeline({
         start:"50% 50%",
         end: "200% 50%",
         pin: true,
-        // markers: true,
+        //markers: true,
         scrub: 1,
     },  
 });
-tl4.to(".c-one",{
+tl4.to(".c-one", {
     marginTop: "-25%",
-    opacity:"1",
+    opacity: "1",
 }, 'sct-1')
-tl4.to(".c-two",{
-    opacity:"1",
+.to(".c-two", {
+    opacity: "1",
 }, 'sct-2')
-tl4.to(".c-one",{
-    marginTop: "-100",
-    opacity:"0",
-}, 'sct-2')
-tl4.to(".c-three",{
-    opacity:"1",
+.to(".c-one", {
+    marginTop: "-100%",
+    opacity: "0",
+}, 'sct-2+=0.8') // delay to ensure c-one fades out completely
+.to(".c-three", {
+    opacity: "1",
 }, 'sct-3')
-tl4.to(".c-two",{
-    opacity:"0",
-}, 'sct-3')
-tl4.to(".c-one",{
-    marginTop:"-180%",
-}, 'sct-3')
-tl4.to(".c-one",{
-    marginTop:"-230%",
+.to(".c-two", {
+    opacity: "0",
+}, 'sct-3+=0.8') // delay to ensure c-two fades out completely
+.to(".c-one", {
+    marginTop: "-180%",
+}, 'sct-3+=0.8') // delay to ensure previous animations complete
+.to(".c-one", {
+    marginTop: "-250%",
 }, 'sct-4')
-tl4.to(".c-three",{
-    opacity:"0",
-}, 'sct-4')
-tl4.to(".cir-part-4",{
-    marginLeft:"100%",
+.to(".c-three", {
+    opacity: "0",
+}, 'sct-4+=1') // delay to ensure c-three fades out completely
+.to(".cir-part-4", {
+    marginLeft: "100%",
     rotate: 360
-}, 'sct-4')
+}, 'sct-4+=0.8'); // delay to ensure previous animations complete
 
 
 let tl5 = gsap.timeline({
