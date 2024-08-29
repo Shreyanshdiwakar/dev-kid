@@ -9,13 +9,13 @@ function raf(time) {
   requestAnimationFrame(raf)
 }
 VanillaTilt.init(document.querySelectorAll(".boxsh"), {
-    max: 25,
-    speed: 400
+    max: 10,
+    speed: 50
   });
   
   VanillaTilt.init(document.querySelectorAll(".boxsh"), {
-    max: 25,
-    speed: 400
+    max: 10,
+    speed: 50
   });
   
   VanillaTilt.init(document.querySelectorAll(".your-element"));

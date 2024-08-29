@@ -112,7 +112,7 @@ nav{
   }
   
   .demobutton:hover::before {
-    scale: 3.4;
+    scale: 3.7;
   }
   
   .demobutton:hover {
@@ -480,79 +480,6 @@ nav{
 .boxsh:hover::after
 {
     opacity: 0.04;
-}
-.boxsh .namesh
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    transform-style: preserve-3d;
-    transform: translate3d(0,0,75px);
-    transition: 0.5s;
-    opacity: 0;
-    z-index: 10;
-}
-.boxsh:hover .namesh
-{
-    top: 40px;
-    opacity: 1;
-}
-.boxsh .buysh
-{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform-style: preserve-3d;
-    transform: translate3d(-50%,0,75px);
-    color: #fff;
-    background: #333;
-    padding: 10px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.5s;
-    opacity: 0;
-    z-index: 10;
-}
-.boxsh:hover .buysh
-{
-    bottom: 30px;
-    opacity: 1;
-}
-.boxsh .circlesh
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: 0.5s;
-    background: #fff;
-    transform-style: preserve-3d;
-    z-index: -9;
-    opacity: 1;
-    transform: translate3d(-50%,-50%,0px)
-
-}
-.boxsh .productsh
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 300px;
-    transition: 0.5s;
-    z-index: 12;
-    transform: 0.5s;
-    transform-style: preserve-3d;
-    transform: translate3d(-50%,-50%,10px)rotate(-15deg);
-}
-
-.containersh .boxsh:hover .productsh
-{
-    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
 }
 
 /* ----------part-5--------- */
